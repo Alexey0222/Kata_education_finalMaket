@@ -1,0 +1,354 @@
+.price-repairs__container.container {
+  padding-bottom: 16px;
+}
+
+.price-repairs {
+  overflow: hidden;
+}
+
+.price-repairs__title-container {
+  background: linear-gradient(
+    270deg,
+    var(--background-main-color) 0%,
+    var(--background-white-color) 100%
+  );
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 80px;
+}
+
+.price-repairs__title-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.price-repairs__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--text-color-gray);
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.price-repairs__castom-swiper-container {
+  overflow: hidden;
+}
+
+.swiper-wrapper.price-repairs__castom-swiper-wrapper {
+  height: 200px;
+}
+
+.price-repairs__castom-swiper-wrapper {
+  padding-bottom: 1px;
+  margin-bottom: 16px;
+}
+
+.swiper-slide.price-repairs__swiper-slide {
+  padding: 16px;
+  border-radius: var(--border-radius-md);
+  width: 100%;
+  max-width: 260px;
+  box-sizing: border-box;
+  background-color: var(--background-white-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.price-repairs__castom-swiper-slide-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+}
+
+.price-repairs__point {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 114%;
+  color: var(--text-color-gray);
+}
+
+.price-repairs__slide-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: 0.01em;
+  color: var(--text-color-black);
+}
+
+.price-repairs__slide-content-desc-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.price-repairs__castom-swiper-slide-wrapper {
+  align-items: center;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.price-repairs__castom-swiper-slide--left {
+  justify-content: flex-start;
+}
+
+.price-repairs__castom-swiper-slide-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--pink-color);
+  border-radius: var(--border-radius-lg);
+  background-color: var(--background-main-color);
+  width: 40px;
+  height: 40px;
+  padding: 14px 15.5px 14px 17px;
+}
+
+.price-swiper-pagination.price-repairs__castom-swiper-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price-swiper-pagination .swiper-pagination-bullet {
+  background-color: var(--color-light-gray);
+  width: 12px;
+  height: 12px;
+}
+
+.price-swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--color-dark-gray);
+}
+
+.hidden {
+  display: none;
+}
+
+.price-menu__button {
+  border-radius: var(--border-radius-mdl);
+  background-color: var(--pink-color);
+  padding: 4px 18px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.price-menu__button-text {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 200%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  text-align: right;
+  color: var(--background-white-color);
+  align-items: center;
+}
+
+.price-repairs__title-items {
+  display: none;
+}
+
+.price-repairs__desc-wrapper.container {
+  padding-top: 0;
+}
+
+.price-repairs__desc-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+}
+
+.price-repairs__desc {
+  width: 80%;
+  max-width: 466px;
+}
+
+.price-repairs__desc-button {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.price-repairs__desc-button-text {
+  position: relative;
+  text-align: start;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  width: 80%;
+}
+
+.price-repairs__desc-button-icon {
+  position: absolute;
+  bottom: 5px;
+  right: 50%;
+}
+
+@media (min-width: 768px) {
+  .price-menu__button {
+    position: relative;
+  }
+
+  .price-repairs__title-container {
+    padding: 16px 0;
+    background: linear-gradient(
+      90deg,
+      var(--background-main-color) 0%,
+      var(--background-white-color) 100%
+    );
+    max-height: 56px;
+    min-height: initial;
+    margin-bottom: 24px;
+  }
+
+  .price-repairs__swiper-slide {
+    max-width: 224px;
+    max-height: 160px;
+  }
+
+  .swiper-wrapper.price-repairs__castom-swiper-wrapper {
+    transform: translate3d(0, 0, 0) !important;
+    height: 100%;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .swiper-slide.price-repairs__swiper-slide {
+    width: 100%;
+    max-width: initial;
+    margin: 0 !important;
+    gap: 0;
+    padding: 0 16px;
+    border-radius: 0;
+  }
+
+  .price-repairs__castom-swiper-slide-content {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 0;
+  }
+
+  .price-repairs__point {
+    display: none;
+  }
+
+  .price-repairs__castom-swiper-slide-content {
+    padding: 24px 0;
+  }
+
+  .swiper-slide.price-repairs__swiper-slide:first-child {
+    border-radius: var(--border-radius-md) var(--border-radius-md) 0 0;
+  }
+
+  .swiper-slide.price-repairs__swiper-slide:last-child {
+    border-radius: 0 0 var(--border-radius-md) var(--border-radius-md);
+  }
+
+  .swiper-slide.price-repairs__swiper-slide:not(:last-child) {
+    .price-repairs__castom-swiper-slide-content {
+      border-bottom: 1px solid var(--background-decorLine-color);
+    }
+  }
+
+  .swiper-slide.price-repairs__swiper-slide:nth-child(1) {
+    .price-repairs__point {
+      position: absolute;
+      top: -30px;
+      display: inline;
+      z-index: 20;
+    }
+  }
+
+  .price-repairs__slide-content-desc-wrapper:nth-child(1) {
+    min-width: 388px;
+  }
+
+  .price-repairs__slide-content-desc-wrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .price-swiper-pagination.price-repairs__castom-swiper-pagination {
+    opacity: 0;
+  }
+
+  .price-repairs__castom-swiper-container {
+    overflow: initial;
+  }
+
+  .price-repairs__castom-swiper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 24px;
+    column-gap: 9px;
+    overflow: initial;
+  }
+
+  .swiper-wrapper.price-repairs__castom-swiper-wrapper.menu_open {
+    transition: height 0.4s ease-in-out;
+    height: 530px;
+  }
+
+  .swiper-wrapper.price-repairs__castom-swiper-wrapper.menu_close {
+    transition: height 0.4s ease-in-out;
+    height: 170px;
+  }
+
+  .types__button-icon {
+    transition: transform 0.4s ease-in-out;
+    transform: scale(1);
+  }
+
+  .types__button-icon.button__icon_rotate-close {
+    transform: scale(1);
+  }
+
+  .types__button-icon.button__icon_rotate-open {
+    transform: scale(-1);
+  }
+
+  .price-repairs__desc-button-text {
+    width: 100%;
+  }
+
+  .price-repairs__desc-button-icon {
+    right: -15px;
+  }
+}
+
+@media (min-width: 1035px) {
+  .swiper-wrapper.price-repairs__castom-swiper-wrapper.menu_open {
+    transition: height 0.4s ease-in-out;
+    height: 345px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .price-repairs__title-container {
+    background: linear-gradient(
+      90deg,
+      var(--background-main-color) 0%,
+      var(--background-white-color) 100%
+    );
+    min-height: 56px;
+  }
+
+  .price-repairs__swiper-slide {
+    max-width: 240px;
+  }
+}

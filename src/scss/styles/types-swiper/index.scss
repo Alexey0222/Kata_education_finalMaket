@@ -1,0 +1,203 @@
+.types-repairs {
+  overflow: hidden;
+}
+
+.types-repairs__title-container {
+  background: linear-gradient(
+    270deg,
+    var(--background-main-color) 0%,
+    var(--background-white-color) 100%
+  );
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 80px;
+}
+
+.types-repairs__title-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.types-repairs__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--text-color-gray);
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.swiper-wrapper.types-repairs__castom-swiper-wrapper {
+  height: 170px;
+}
+
+.types-repairs__castom-swiper-wrapper {
+  padding-bottom: 1px;
+  margin-bottom: 16px;
+}
+
+.types-repairs__swiper-slide {
+  padding: 16px;
+  border: 1px solid var(--background-decorLine-color);
+  border-radius: var(--border-radius-md);
+  width: 100%;
+  max-width: 240px;
+  height: 160px;
+  box-sizing: border-box;
+  background-color: var(--background-white-color);
+}
+
+.types-repairs__castom-swiper-slide-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 64px;
+}
+
+.types-repairs__castom-swiper-slide-wrapper {
+  align-items: center;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.types-repairs__castom-swiper-slide--left {
+  justify-content: flex-start;
+}
+
+.types-repairs__castom-swiper-slide-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--pink-color);
+  border-radius: var(--border-radius-lg);
+  background-color: var(--background-main-color);
+  width: 40px;
+  height: 40px;
+  padding: 14px 15.5px 14px 17px;
+}
+
+.types-swiper-pagination.types-repairs__castom-swiper-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.types-swiper-pagination .swiper-pagination-bullet {
+  background-color: var(--color-light-gray);
+  width: 12px;
+  height: 12px;
+}
+
+.types-swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--color-dark-gray);
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .types-repairs__title-container {
+    padding: 16px 0;
+    background: linear-gradient(
+      90deg,
+      var(--background-main-color) 0%,
+      var(--background-white-color) 100%
+    );
+    max-height: 56px;
+    min-height: initial;
+    margin-bottom: 24px;
+  }
+
+  .types-repairs__swiper-slide {
+    max-width: 224px;
+    max-height: 160px;
+  }
+
+  .swiper-wrapper.types-repairs__castom-swiper-wrapper {
+    transform: translate3d(0, 0, 0) !important;
+  }
+
+  .types-swiper-pagination.types-repairs__castom-swiper-pagination {
+    opacity: 0;
+  }
+
+  .types-repairs__castom-swiper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 24px;
+    overflow: hidden;
+    margin-bottom: 24px;
+  }
+
+  .swiper-wrapper.types-repairs__castom-swiper-wrapper.menu_open {
+    transition: height 0.4s ease-in-out;
+    height: 530px;
+  }
+
+  .swiper-wrapper.types-repairs__castom-swiper-wrapper.menu_close {
+    transition: height 0.4s ease-in-out;
+    height: 170px;
+  }
+
+  .types__button-icon {
+    transition: transform 0.4s ease-in-out;
+    transform: scale(1);
+  }
+
+  .types__button-icon.button__icon_rotate-close {
+    transform: scale(1);
+  }
+
+  .types__button-icon.button__icon_rotate-open {
+    transform: scale(-1);
+  }
+}
+
+@media (min-width: 1035px) {
+  .swiper-wrapper.types-repairs__castom-swiper-wrapper.menu_open {
+    transition: height 0.4s ease-in-out;
+    height: 345px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .swiper-wrapper.types-repairs__castom-swiper-wrapper.menu_open {
+    transition: height 0.4s ease-in-out;
+    height: 511px;
+  }
+
+  .types-repairs__castom-swiper-wrapper {
+    row-gap: 16px;
+    column-gap: 9px;
+  }
+
+  .types-repairs__container.container {
+    padding-top: 0;
+  }
+
+  .types-repairs__title-container {
+    background: linear-gradient(
+      90deg,
+      var(--background-main-color) 0%,
+      var(--background-white-color) 100%
+    );
+    min-height: 56px;
+  }
+
+  .types-repairs__swiper-slide {
+    max-width: 240px;
+  }
+}
+
+@media (min-width: 1423px) {
+  .swiper-wrapper.types-repairs__castom-swiper-wrapper.menu_open {
+    transition: height 0.4s ease-in-out;
+    height: 335px;
+  }
+}

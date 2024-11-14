@@ -1,0 +1,66 @@
+// $white-color: #fff;
+// $black-color:#1b1c21;
+// $gray-color:#f8f8f8;
+// $dark-gray-color:#b5b6bc;
+// $light-gray-color:#ddd;
+// $light-dark-gray-color: #7e7e82;
+// $dark-white-color:#eaeaea;
+// $turquoise-color:#41f6d7;
+// $pink-color:#ff3e79;
+
+// $text-size_lg: 28px;
+// $text-size_sm: 14px;
+// $text-size_md: 16px;
+
+// $radius_lg: 20px;
+// $radius_md: 6px;
+// $radius_sm: 2px;
+
+
+
+// :root {
+//     --background-white-color: $white-color;
+//     --background-main-color: $gray-color;
+//     --background-decorLine-color: $dark-white-color;
+//     --background-active-color: $turquoise-color;
+
+//     --color-dark-gray: $dark-gray-color;
+//     --color-light-gray: $light-gray-color;
+
+//     --text-color-black: $black-color;
+//     --text-color-gray: $light-dark-gray-color;
+
+//     --pink-color: #ff3e79;
+
+//     --title-text-size: $text-size_lg;
+//     --text-size: $text-size_sm;
+//     --link-text-size: $text-size_md;
+
+//     --border-radius-lg: $radius_lg;
+//     --border-radius-md: $radius_md;
+//     --border-radius-sm: $radius_sm;
+// }
+
+:root {
+    --background-white-color: #fff;
+    --background-main-color: #f8f8f8;
+    --background-decorLine-color: #eaeaea;
+    --background-active-color: #41f6d7;
+
+    --color-dark-gray: #b5b6bc;
+    --color-light-gray: #ddd;
+
+    --text-color-black: #1b1c21;
+    --text-color-gray: #7e7e82;
+
+    --pink-color: #ff3e79;
+
+    --title-text-size: 28px;
+    --text-size: 14px;
+    --link-text-size: 16px;
+
+    --border-radius-lg: 20px;
+    --border-radius-mdl: 16px;
+    --border-radius-md: 6px;
+    --border-radius-sm: 2px;
+}

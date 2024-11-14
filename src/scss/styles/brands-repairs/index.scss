@@ -1,0 +1,246 @@
+.container {
+  margin: none;
+}
+
+.brands-repairs__content {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.brands-repairs__title-container {
+  background: linear-gradient(
+    270deg,
+    var(--background-main-color) 0%,
+    var(--background-white-color) 100%
+  );
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 80px;
+}
+
+.brands-repairs__title-container {
+  h2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--text-color-gray);
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.brands-repairs__title-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.brands-repairs__castom-swiper-container {
+  width: 240px;
+}
+
+.brands-repairs__castom-swiper {
+  // padding-top: 16px;
+  // padding-bottom: 38px;
+  background-color: var(--background-main-color);
+  position: relative;
+}
+
+.brands-swiper.brands-repairs__castom-swiper {
+  overflow: visible;
+}
+
+.brands-swiper-pagination.brands-repairs__castom-swiper-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brands-swiper-pagination .swiper-pagination-bullet {
+  background-color: var(--color-light-gray);
+  width: 12px;
+  height: 12px;
+}
+
+.brands-swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--color-dark-gray);
+}
+
+.brands-repairs__castom-swiper-wrapper {
+  padding-bottom: 1px;
+  margin-bottom: 16px;
+}
+
+.brands-repairs__castom-swiper-slide {
+  width: 100%;
+  max-width: 240px;
+}
+
+.brands-repairs__castom-swiper-slide-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  padding: 16px;
+  border: 1px solid var(--background-decorLine-color);
+  border-radius: 6px;
+  background-color: var(--background-white-color);
+}
+
+.brands-repairs__castom-swiper-slide-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--pink-color);
+  border-radius: var(--border-radius-lg);
+  background-color: var(--background-main-color);
+  width: 40px;
+  height: 40px;
+  padding: 14px 15.5px 14px 17px;
+}
+
+.brands-repairs__castom-swiper-slide-img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 108px;
+  max-height: 32px;
+}
+
+.brands-repairs__castom-swiper-slide-img {
+  width: 100%;
+  max-height: 55px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .brands-repairs__castom-swiper-container.container {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: none;
+  }
+
+  /* .castom-swiper{
+      height: 300px;
+  } */
+
+  .brands-repairs__castom-swiper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 24px;
+    column-gap: 16px;
+    overflow: hidden;
+    margin-bottom: 24px;
+  }
+
+  .swiper-wrapper.brands-repairs__castom-swiper-wrapper {
+    transform: translate3d(0, 0, 0) !important;
+    height: 170px;
+  }
+
+  .brands-repairs__castom-swiper-slide {
+    max-width: 224px;
+    max-height: 72px;
+    margin-right: 0 !important;
+  }
+
+  .brands__button {
+    background-color: var(--background-main-color);
+    border: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 17px;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 34px;
+  }
+
+  .brands-repairs__title-container {
+    padding: 16px 0;
+    background: linear-gradient(
+      90deg,
+      var(--background-main-color) 0%,
+      var(--background-white-color) 100%
+    );
+    max-height: 56px;
+    min-height: initial;
+    margin-bottom: 24px;
+  }
+
+  .castom-swiper__screen {
+    width: 100%;
+    height: calc(398px - 50%);
+    transform: translate(0, 70%);
+    position: absolute;
+    background-color: var(--background-main-color);
+    bottom: 0;
+    z-index: 30;
+  }
+
+  .swiper-wrapper.brands-repairs__castom-swiper-wrapper.menu_open {
+    transition: height 0.4s ease-in-out;
+    height: 361px;
+    padding-bottom: 2px;
+  }
+
+  .swiper-wrapper.brands-repairs__castom-swiper-wrapper.menu_close {
+    transition: height 0.4s ease-in-out;
+    height: 170px;
+  }
+
+  .brands__button-icon {
+    transition: transform 0.4s ease-in-out;
+    transform: scale(1);
+  }
+
+  .brands__button-icon.button__icon_rotate-close {
+    transform: scale(1);
+  }
+
+  .brands__button-icon.button__icon_rotate-open {
+    transform: scale(-1);
+  }
+
+  .brands-swiper-pagination.brands-repairs__castom-swiper-pagination {
+    opacity: 0;
+  }
+}
+
+@media (min-width: 991px) {
+  .swiper-wrapper.brands-repairs__castom-swiper-wrapper.menu_open {
+    transition: height 0.4s ease-in-out;
+    height: 265px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .swiper-wrapper.brands-repairs__castom-swiper-wrapper.menu_open {
+    height: 248px;
+  }
+
+  .brands-repairs__title-container {
+    background: linear-gradient(
+      90deg,
+      var(--background-main-color) 0%,
+      var(--background-white-color) 100%
+    );
+    min-height: 56px;
+  }
+
+  .brands-repairs__castom-swiper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 16px;
+    column-gap: 32px;
+    overflow: hidden;
+    margin-bottom: 24px;
+  }
+}
