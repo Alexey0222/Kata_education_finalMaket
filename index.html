@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Document</title>
+  <link href="style.css" rel="stylesheet"></head>
+  <body class="body__content">
+    
+
+    <aside class="burger-menu">
+      <section class="burger-menu__container" id="burger-menu">
+        <div class="burger-menu__header">
+          <div class="header__buttons-wrapper header__buttons-wrapper--right">
+            <button class="header__button header__button--close" id="burger-close-button">
+              <img class="header__image" src="./img/icons/close-icon.svg" alt="icon menu">
+            </button>
+            <button class="header__button-logo">
+              <img class="header__logo" src="./img/logo.png" alt="logo company">
+            </button>
+          </div>
+          <div class="header__buttons-wrapper header__buttons-wrapper--left">
+            <button class="header__button">
+              <img class="header__image" src="./img/icons/search-icon.svg" alt="phone icon">
+            </button>
+          </div>
+        </div>
+        <nav class="burger-menu__nav">
+          <ul class="burger-menu__nav-items">
+            <li class="burger-menu__nav-item">
+              <a class="burger-menu__nav-item-button" href="#">Ремонт техники</a>
+            </li>
+            <li class="burger-menu__nav-item burger-menu__nav-item--active">
+              <a class="burger-menu__nav-item-button" href="#">
+                Услуги и сервисы
+              </a>
+            </li>
+            <li class="burger-menu__nav-item">
+              <a class="burger-menu__nav-item-button" href="#">
+                Корпоративным клиент
+              </a>
+            </li>
+            <li class="burger-menu__nav-item">
+              <a class="burger-menu__nav-item-button" href="#">
+                Продавцам техники
+              </a>
+            </li>
+            <li class="burger-menu__nav-item">
+              <a class="burger-menu__nav-item-button" href="#">Партнерам</a>
+            </li>
+            <li class="burger-menu__nav-item">
+              <a class="burger-menu__nav-item-button" href="#">Производителям</a>
+            </li>
+            <li class="burger-menu__nav-item">
+              <a class="burger-menu__nav-item-button" href="#">
+                Наши сервисные центр
+              </a>
+            </li>
+            <li class="burger-menu__nav-item">
+              <a class="burger-menu__nav-item-button" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="burger-menu__footer">
+          <div class="burger-menu__footer-buttons">
+            <button class="burger-menu__footer-button" id="phone-menu__button-open-modal">
+              <img src="./img/icons/phone-icon.svg" alt="" class="burger-menu__footer-button-icon">
+            </button>
+            <button class="burger-menu__footer-button" id="feedback-menu__button-open-modal">
+              <img src="./img/icons/message-icon.svg" alt="" class="burger-menu__footer-button-icon">
+            </button>
+            <button class="burger-menu__footer-button">
+              <img src="./img/icons/user-icon.svg" alt="" class="burger-menu__footer-button-icon">
+            </button>
+          </div>
+          <a src="#" class="burger-menu__footer-email">mail@cps.com</a>
+          <a src="tel:#" class="burger-menu__footer-phone">8 800 890 8900</a>
+          <ul class="burger-menu__footer-lang-items">
+            <li class="burger-menu__footer-lang-item burger-menu__footer-lang-item--active">
+              <button class="burger-menu__footer-lang-button"> RU </button>
+            </li>
+            <li class="burger-menu__footer-lang-item">
+              <button class="burger-menu__footer-lang-button">EN</button>
+            </li>
+            <li class="burger-menu__footer-lang-item">
+              <button class="burger-menu__footer-lang-button">CH</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </aside>
+
+    
+    <div class="body__content-wrapper">
+      <header class="header">
+        <div class="header__container container">
+          <div class="header__buttons-wrapper header__buttons-wrapper--left">
+            <button class="header__button" id="burger-open-button">
+              <img class="header__image" src="./img/icons/menu-icon.svg" alt="icon menu">
+            </button>
+            <div class="header__decor-line tablet"></div>
+            <button class="header__button-logo">
+              <img class="header__logo" src="./img/logo.png" alt="">
+            </button>
+          </div>
+          <div class="heade__buttons-wrapper header__buttons-wrapper--right">
+            <button class="header__button tablet" id="phone-menu__button-open-modal">
+              <img class="header__image" src="./img/icons/phone-icon.svg" alt="">
+            </button>
+            <button class="header__button tablet" id="feedback-menu__button-open-modal">
+              <img class="header__image" src="./img/icons/message-icon.svg" alt="">
+            </button>
+            <button class="header__button tablet">
+              <img class="header__image" src="./img/icons/user-icon.svg" alt="">
+            </button>
+            <div class="header__decor-line"></div>
+            <div class="header__buttons-wrapper header__buttons-wrapper--absolute">
+              <div class="header__button-wrapper">
+                <span class="header__button-description desktop">Оставить заявку</span>
+                <button class="header__button">
+                  <img class="header__image" src="./img/icons/option-icon.svg" alt="">
+                </button>
+              </div>
+              <div class="header__button-wrapper">
+                <span class="header__button-description desktop">Статус ремонта</span>
+                <button class="header__button">
+                  <img class="header__image" src="./img/icons/status-icon.svg" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      
+
+      <main class="main">
+        <div class="main__title-wrapper container">
+          <h1 class="main__title">Услуги и сервисы</h1>
+        </div>
+        <section class="service container">
+          <div class="service__position-wrapper">
+            <ul class="service__position-items">
+              <li class="service__position-item">
+                <a href="#brands-repairs" class="service__position-item-link">
+                  Ремонтируемые устройства
+                </a>
+              </li>
+              <li class="service__position-item">
+                <a href="#types-repairs" class="service__position-item-link">
+                  Дополнительные услуги
+                </a>
+              </li>
+              <li class="service__position-item">
+                <a href="#price" class="service__position-item-link">
+                  Цены на услуги
+                </a>
+              </li>
+              <li class="service__position-item">
+                <a href="#" class="service__position-item-link">
+                  Адреса сервисных центров
+                </a>
+              </li>
+              <li class="service__position-item">
+                <a href="#" class="service__position-item-link">
+                  Специальные цены
+                </a>
+              </li>
+              <li class="service__position-item">
+                <a href="#" class="service__position-item-link"> Отзывы </a>
+              </li>
+            </ul>
+          </div>
+          <div class="service__feedback-description">
+            <div class="service__feedback-description-wrapper">
+              <p class="service__feedback-description-text">
+                Мы являемся авторизованным сервисным центром по ремонту техники
+                Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+                официальной гарантией производителя.
+                <br>
+                <br>
+                Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                партнера, что подтверждает большое количество постоянных
+                клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
+                и, в свою очередь, советуют нас родным и близким.
+
+                <br>
+                <br>
+                Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                партнера, что подтверждает большое количество постоянных
+                клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
+                и, в свою очередь, советуют нас родным и близким.
+              </p>
+              <div class="service__feedback-description-button-wrapper">
+                <button type="button" class="service__feedback-description-button close" id="service-feedback-button">
+                  <img class="service__feedback-description-button-icon" src="./img/icons/arrows-icon.svg" alt="">
+                  <p class="service__feedback-description-button-text">Читать далее</p>
+                </button>
+              </div>
+            </div>
+            <div class="service__feedback-image-wrapper">
+              <img class="service__feedback-image" src="./img/img-company.jpg" alt="company image office">
+            </div>
+          </div>
+        </section>
+
+        
+
+        <section class="brands-repairs__content">
+          <div class="brands-repairs__title-container">
+            <div class="container">
+              <div class="brands-repairs__title-wrapper">
+                <h2 class="brands-repairs__title" id="brands-repairs">Ремонт техники различных брендов</h2>
+              </div>
+            </div>
+          </div>
+          <div class="brands-repairs__castom-swiper-container swiper-filter container">
+            <div class="brands-swiper brands-repairs__castom-swiper">
+              <div class="swiper-wrapper brands-repairs__castom-swiper-wrapper">
+                <div class="swiper-slide brands-repairs__castom-swiper-slide">
+                  <div class="brands-repairs__castom-swiper-slide-content">
+                    <div class="brands-repairs__castom-swiper-slide-img-wrapper">
+                      <img src="./img/lenova.png" alt="image company" class="brands-repairs__castom-swiper-slide-img">
+                    </div>
+                    <button class="brands-repairs__castom-swiper-slide-button">
+                      <img src="./img/icons/horizontal-arrow.svg" alt="button arrow">
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide brands-repairs__castom-swiper-slide">
+                  <div class="brands-repairs__castom-swiper-slide-content">
+                    <div class="brands-repairs__castom-swiper-slide-img-wrapper">
+                      <img src="./img/samsung.png" alt="image company" class="brands-repairs__castom-swiper-slide-img">
+                    </div>
+                    <button class="brands-repairs__castom-swiper-slide-button">
+                      <img src="./img/icons/horizontal-arrow.svg" alt="button arrow">
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide brands-repairs__castom-swiper-slide">
+                  <div class="brands-repairs__castom-swiper-slide-content">
+                    <div class="brands-repairs__castom-swiper-slide-img-wrapper">
+                      <img src="./img/apple.png" alt="image company" class="brands-repairs__castom-swiper-slide-img">
+                    </div>
+                    <button class="brands-repairs__castom-swiper-slide-button">
+                      <img src="./img/icons/horizontal-arrow.svg" alt="button arrow">
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide brands-repairs__castom-swiper-slide">
+                  <div class="brands-repairs__castom-swiper-slide-content">
+                    <div class="brands-repairs__castom-swiper-slide-img-wrapper">
+                      <img src="./img/sonic.png" alt="image company" class="brands-repairs__castom-swiper-slide-img">
+                    </div>
+                    <button class="brands-repairs__castom-swiper-slide-button">
+                      <img src="./img/icons/horizontal-arrow.svg" alt="button arrow">
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide brands-repairs__castom-swiper-slide">
+                  <div class="brands-repairs__castom-swiper-slide-content">
+                    <div class="brands-repairs__castom-swiper-slide-img-wrapper">
+                      <img src="./img/bosch.png" alt="image company" class="brands-repairs__castom-swiper-slide-img">
+                    </div>
+                    <button class="brands-repairs__castom-swiper-slide-button">
+                      <img src="./img/icons/horizontal-arrow.svg" alt="button arrow">
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide brands-repairs__castom-swiper-slide">
+                  <div class="brands-repairs__castom-swiper-slide-content">
+                    <div class="brands-repairs__castom-swiper-slide-img-wrapper">
+                      <img src="./img/hp.png" alt="image company" class="brands-repairs__castom-swiper-slide-img">
+                    </div>
+                    <button class="brands-repairs__castom-swiper-slide-button">
+                      <img src="./img/icons/horizontal-arrow.svg" alt="button arrow">
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide brands-repairs__castom-swiper-slide">
+                  <div class="brands-repairs__castom-swiper-slide-content">
+                    <div class="brands-repairs__castom-swiper-slide-img-wrapper">
+                      <img src="./img/acer.png" alt="image company" class="brands-repairs__castom-swiper-slide-img">
+                    </div>
+                    <button class="brands-repairs__castom-swiper-slide-button">
+                      <img src="./img/icons/horizontal-arrow.svg" alt="button arrow">
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide brands-repairs__castom-swiper-slide">
+                  <div class="brands-repairs__castom-swiper-slide-content">
+                    <div class="brands-repairs__castom-swiper-slide-img-wrapper">
+                      <img src="./img/sony.png" alt="image company" class="brands-repairs__castom-swiper-slide-img">
+                    </div>
+                    <button class="brands-repairs__castom-swiper-slide-button">
+                      <img src="./img/icons/horizontal-arrow.svg" alt="button arrow">
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide brands-repairs__castom-swiper-slide">
+                  <div class="brands-repairs__castom-swiper-slide-content">
+                    <div class="brands-repairs__castom-swiper-slide-img-wrapper">
+                      <img src="./img/lenova.png" alt="image company" class="brands-repairs__castom-swiper-slide-img">
+                    </div>
+                    <button class="brands-repairs__castom-swiper-slide-button">
+                      <img src="./img/icons/horizontal-arrow.svg" alt="button arrow">
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide brands-repairs__castom-swiper-slide">
+                  <div class="brands-repairs__castom-swiper-slide-content">
+                    <div class="brands-repairs__castom-swiper-slide-img-wrapper">
+                      <img src="./img/samsung.png" alt="image company" class="brands-repairs__castom-swiper-slide-img">
+                    </div>
+                    <button class="brands-repairs__castom-swiper-slide-button">
+                      <img src="./img/icons/horizontal-arrow.svg" alt="button arrow">
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide brands-repairs__castom-swiper-slide">
+                  <div class="brands-repairs__castom-swiper-slide-content">
+                    <div class="brands-repairs__castom-swiper-slide-img-wrapper">
+                      <img src="./img/apple.png" alt="image company" class="brands-repairs__castom-swiper-slide-img">
+                    </div>
+                    <button class="brands-repairs__castom-swiper-slide-button">
+                      <img src="./img/icons/horizontal-arrow.svg" alt="button arrow">
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <button class="brands__button close" id="brands-menu-button">
+                <img class="brands__button-icon" src="./img/icons/arrows-icon.svg" alt="button icon">
+                <p class="brands__button-text">Показать все</p>
+              </button>
+            </div>
+            <div class="brands-swiper-pagination brands-repairs__castom-swiper-pagination"></div>
+          </div>
+        </section>
+
+        
+
+        <section class="types-repairs">
+          <div class="types-repairs__title-container">
+            <div class="container">
+              <div class="types-repairs__title-wrapper">
+                <h2 class="types-repairs__title" id="types-repairs">Ремонт различных видов техники</h2>
+              </div>
+            </div>
+          </div>
+          <div class="types-repairs__container swiper-filter container">
+            <div class="types-repairs__castom-swiper-container">
+              <div class="types-swiper types-repairs__castom-swiper">
+                <div class="swiper-wrapper types-repairs__castom-swiper-wrapper">
+                  <div class="swiper-slide types-repairs__swiper-slide">
+                    <div class="types-repairs__castom-swiper-slide-content">
+                      <div class="types-repairs__castom-swiper-slide-wrapper types-repairs__castom-swiper-slide--left">
+                        <p class="types-repairs__castom-swiper-slide-text">Ремонт ноутбуков</p>
+                      </div>
+                      <button class="types-repairs__castom-swiper-slide-button types-repairs__castom-swiper-slide_right">
+                        <img src="./img/icons/horizontal-arrow.svg" alt="button arrow">
+                      </button>
+                    </div>
+                  </div>
+                  <div class="swiper-slide types-repairs__swiper-slide">
+                    <div class="types-repairs__castom-swiper-slide-content">
+                      <div class="types-repairs__castom-swiper-slide-wrapper types-repairs__castom-swiper-slide--left">
+                        <p class="types-repairs__castom-swiper-slide-text">Ремонт планшетов</p>
+                      </div>
+                      <button class="types-repairs__castom-swiper-slide-button types-repairs__castom-swiper-slide--right">
+                        <img src="./img/icons/horizontal-arrow.svg" alt="button arrow">
+                      </button>
+                    </div>
+                  </div>
+                  <div class="swiper-slide types-repairs__swiper-slide">
+                    <div class="types-repairs__castom-swiper-slide-content">
+                      <div class="types-repairs__castom-swiper-slide-wrapper types-repairs__castom-swiper-slide--left">
+                        <p class="types-repairs__castom-swiper-slide-text">Ремонт ПК</p>
+                      </div>
+                      <button class="types-repairs__castom-swiper-slide-button types-repairs__castom-swiper-slide--right">
+                        <img src="./img/icons/horizontal-arrow.svg" alt="button arrow">
+                      </button>
+                    </div>
+                  </div>
+                  <div class="swiper-slide types-repairs__swiper-slide">
+                    <div class="types-repairs__castom-swiper-slide-content">
+                      <div class="types-repairs__castom-swiper-slide-wrapper types-repairs__castom-swiper-slide--left">
+                        <p class="types-repairs__castom-swiper-slide-text">Ремонт мониторов</p>
+                      </div>
+                      <button class="types-repairs__castom-swiper-slide-button types-repairs__castom-swiper-slide--right">
+                        <img src="./img/icons/horizontal-arrow.svg" alt="button arrow">
+                      </button>
+                    </div>
+                  </div>
+                  <div class="swiper-slide types-repairs__swiper-slide">
+                    <div class="types-repairs__castom-swiper-slide-content">
+                      <div class="types-repairs__castom-swiper-slide-wrapper types-repairs__castom-swiper-slide--left">
+                        <p class="types-repairs__castom-swiper-slide-text">Ремонт ноутбуков</p>
+                      </div>
+                      <button class="types-repairs__castom-swiper-slide-button types-repairs__castom-swiper-slide--right">
+                        <img src="./img/icons/horizontal-arrow.svg" alt="button arrow">
+                      </button>
+                    </div>
+                  </div>
+                  <div class="swiper-slide types-repairs__swiper-slide">
+                    <div class="types-repairs__castom-swiper-slide-content">
+                      <div class="types-repairs__castom-swiper-slide-wrapper types-repairs__castom-swiper-slide--left">
+                        <p class="types-repairs__castom-swiper-slide-text">Ремонт планшетов</p>
+                      </div>
+                      <button class="types-repairs__castom-swiper-slide-button types-repairs__castom-swiper-slide--right">
+                        <img src="./img/icons/horizontal-arrow.svg" alt="button arrow">
+                      </button>
+                    </div>
+                  </div>
+                  <div class="swiper-slide types-repairs__swiper-slide">
+                    <div class="types-repairs__castom-swiper-slide-content">
+                      <div class="types-repairs__castom-swiper-slide-wrapper types-repairs__castom-swiper-slide--left">
+                        <p class="types-repairs__castom-swiper-slide-text">Ремонт ПК</p>
+                      </div>
+                      <button class="types-repairs__castom-swiper-slide-button types-repairs__castom-swiper-slide--right">
+                        <img src="./img/icons/horizontal-arrow.svg" alt="button arrow">
+                      </button>
+                    </div>
+                  </div>
+                  <div class="swiper-slide types-repairs__swiper-slide">
+                    <div class="types-repairs__castom-swiper-slide-content">
+                      <div class="types-repairs__castom-swiper-slide-wrapper types-repairs__castom-swiper-slide--left">
+                        <p class="types-repairs__castom-swiper-slide-text">Ремонт мониторов</p>
+                      </div>
+                      <button class="types-repairs__castom-swiper-slide-button types-repairs__castom-swiper-slide--right">
+                        <img src="./img/icons/horizontal-arrow.svg" alt="button arrow">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <button class="types__button close" id="types-menu-button">
+                  <img class="types__button-icon" src="./img/icons/arrows-icon.svg" alt="button icon">
+                  <p class="types__button-text">Показать все</p>
+                </button>
+              </div>
+              <div class="types-swiper-pagination types-repairs__castom-swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
+
+        
+
+        <section class="price">
+          <div class="price-repairs__title-container">
+            <div class="container">
+              <div class="price-repairs__title-wrapper">
+                <h2 class="price-repairs__title" id="price">Цены на услуги</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="price-repairs__container swiper-filter container">
+            <div class="price-repairs__castom-swiper-container">
+              <div class="price-swiper-h price-repairs__castom-swiper">
+                <div class="swiper-wrapper price-repairs__castom-swiper-wrapper">
+                  <div class="swiper-slide price-repairs__swiper-slide">
+                    <div class="price-repairs__castom-swiper-slide-content">
+                      <div class="price-repairs__slide-content-desc-wrapper">
+                        <p class="price-repairs__point">Ремонтные услуги</p>
+                        <p class="price-repairs__slide-text">Диагностика</p>
+                      </div>
+                      <div class="price-repairs__slide-content-desc-wrapper">
+                        <p class="price-repairs__point">Цена</p>
+                        <p class="price-repairs__slide-text">Бесплатно</p>
+                      </div>
+
+                      <div class="price-repairs__slide-content-desc-wrapper">
+                        <p class="price-repairs__point">Срок</p>
+                        <p class="price-repairs__slide-text">30 мин</p>
+                      </div>
+                      <button class="price-menu__button" type="button">
+                        <p class="price-menu__button-text">Заказать</p>
+                        <img src="./img/icons/right-arrow.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                  <div class="swiper-slide price-repairs__swiper-slide">
+                    <div class="price-repairs__castom-swiper-slide-content">
+                      <div class="price-repairs__slide-content-desc-wrapper">
+                        <p class="price-repairs__point">Ремонтные услуги</p>
+                        <p class="price-repairs__slide-text">Замена дисплея</p>
+                      </div>
+                      <div class="price-repairs__slide-content-desc-wrapper">
+                        <p class="price-repairs__point">Цена</p>
+                        <p class="price-repairs__slide-text">1 000 ₽</p>
+                      </div>
+
+                      <div class="price-repairs__slide-content-desc-wrapper">
+                        <p class="price-repairs__point">Срок</p>
+                        <p class="price-repairs__slide-text">30-120 мин</p>
+                      </div>
+                      <button class="price-menu__button" type="button">
+                        <p class="price-menu__button-text">Заказать</p>
+                        <img src="./img/icons/right-arrow.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                  <div class="swiper-slide price-repairs__swiper-slide">
+                    <div class="price-repairs__castom-swiper-slide-content">
+                      <div class="price-repairs__slide-content-desc-wrapper">
+                        <p class="price-repairs__point">Ремонтные услуги</p>
+                        <p class="price-repairs__slide-text">Замена полифонического динамика</p>
+                      </div>
+                      <div class="price-repairs__slide-content-desc-wrapper">
+                        <p class="price-repairs__point">Цена</p>
+                        <p class="price-repairs__slide-text">1 000 ₽</p>
+                      </div>
+
+                      <div class="price-repairs__slide-content-desc-wrapper">
+                        <p class="price-repairs__point">Срок</p>
+                        <p class="price-repairs__slide-text">30-120 мин</p>
+                      </div>
+                      <button class="price-menu__button" type="button">
+                        <p class="price-menu__button-text">Заказать</p>
+                        <img src="./img/icons/right-arrow.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                  <div class="swiper-slide price-repairs__swiper-slide">
+                    <div class="price-repairs__castom-swiper-slide-content">
+                      <div class="price-repairs__slide-content-desc-wrapper">
+                        <p class="price-repairs__point">Ремонтные услуги</p>
+                        <p class="price-repairs__slide-text">Тестирование с выдачей технического заключения</p>
+                      </div>
+                      <div class="price-repairs__slide-content-desc-wrapper">
+                        <p class="price-repairs__point">Цена</p>
+                        <p class="price-repairs__slide-text">1 000 ₽</p>
+                      </div>
+
+                      <div class="price-repairs__slide-content-desc-wrapper">
+                        <p class="price-repairs__point">Срок</p>
+                        <p class="price-repairs__slide-text">30-120 мин</p>
+                      </div>
+                      <button class="price-menu__button" type="button">
+                        <p class="price-menu__button-text">Заказать</p>
+                        <img src="./img/icons/right-arrow.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                  <div class="swiper-slide price-repairs__swiper-slide">
+                    <div class="price-repairs__castom-swiper-slide-content">
+                      <div class="price-repairs__slide-content-desc-wrapper">
+                        <p class="price-repairs__point">Ремонтные услуги</p>
+                        <p class="price-repairs__slide-text">Замена программного обеспечения</p>
+                      </div>
+                      <div class="price-repairs__slide-content-desc-wrapper">
+                        <p class="price-repairs__point">Цена</p>
+                        <p class="price-repairs__slide-text">1 000 ₽</p>
+                      </div>
+
+                      <div class="price-repairs__slide-content-desc-wrapper">
+                        <p class="price-repairs__point">Срок</p>
+                        <p class="price-repairs__slide-text">30-120 мин</p>
+                      </div>
+                      <button class="price-menu__button" type="button">
+                        <p class="price-menu__button-text">Заказать</p>
+                        <img src="./img/icons/right-arrow.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="price-swiper-pagination price-repairs__castom-swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="price-repairs__desc-wrapper container">
+            <p class="price-repairs__desc">Все цены указаны с учетом НДС. Стоимость ремонта указана на
+              единичную услугу. Для получения коммерческого предложения на
+              постоянное обслуживание, оставьте заявку.</p>
+            <button class="price-repairs__desc-button">
+              <p class="price-repairs__desc-button-text">Получить коммерческое предложение
+                <img class="price-repairs__desc-button-icon" src="./img/icons/horizontal-arrow.svg" alt="button arrow"></p>
+            </button>
+          </div>
+        </section>
+      </main>
+
+      
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-wrapper">
+            <div class="footer__content-items">
+              <div class="footer__content-item">
+                <p class="footer__text">
+                  © 2024 CPS
+                  <br>
+                  Разработано командой Apesong
+                </p>
+              </div>
+              <div class="footer__content-item">
+                <p class="footer__text">Политика конфиденциальности</p>
+              </div>
+              <div class="footer__content-item">
+                <p class="footer__text">Информация, размещенная на данной странице, не является
+                  публичной офертой</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+
+    <aside class="phone-menu">
+      <section class="phone-menu__container" id="phone-menu">
+        <button class="phone-menu__button-close-modal phone-menu__button--close" id="phone-menu__button-close-modal">
+          <img class="search__icon" src="./img/icons/close-icon.svg" alt="icon menu">
+        </button>
+        <h2 class="phone-menu__title">Заказать звонок</h2>
+        <form class="phone-menu__form" action="" method="pos">
+          <label class="phone-menu__label" for="phone">
+            <input id="phone" class="phone-menu__input" type="tel" placeholder="Телефон">
+          </label>
+          <div class="phone-menu__form-desc-wrapper">
+            <p class="phone-menu__form-desc">
+              Нажимая “отправить”, вы даете согласие на <span class="phone-menu__form-desc--pink">обработку персональных данных</span>
+              и соглашаетесь с нашей
+              <span class="phone-menu__form-desc--pink">политикой конфиденциальности</span>
+            </p>
+          </div>
+          <button class="phone-menu__button" type="button">
+            <p>ОТПРАВИТЬ</p>
+            <img src="./img/icons/right-arrow.svg" alt="">
+          </button>
+        </form>
+      </section>
+    </aside>
+
+    
+
+    <aside class="feedback-menu">
+      <section class="feedback-menu__container" id="feedback-menu">
+        <button class="feedback-menu__button-close-modal feedback-menu__button--close" id="feedback-menu__button-close-modal">
+          <img class="search__icon" src="./img/icons/close-icon.svg" alt="icon menu">
+        </button>
+        <h2 class="feedback-menu__title">Обратная связь</h2>
+        <form class="feedback-menu__form" action="" method="post">
+          <label class="feedback-menu__label" for="feedback-text">
+            <input id="feedback-text" class="feedback-menu__input feedback-menu__input-name" type="text" placeholder="Имя">
+          </label>
+
+          <label class="feedback-menu__label" for="feedback-phone">
+            <input id="feedback-phone" class="feedback-menu__input feedback-menu__input-phone" type="tel" placeholder="Телефон">
+          </label>
+
+          <label class="feedback-menu__label" for="feedback-email">
+            <input id="feedback-email" class="feedback-menu__input feedback-menu__input-email" type="email" placeholder="Электронная почта">
+          </label>
+
+          <label class="feedback-menu__label" for="feedback-message">
+            <textarea id="feedback-message" class="feedback-menu__input feedback-menu__input-message" placeholder="Сообщение"></textarea>
+          </label>
+
+          <div class="feedback-menu__form-desc-wrapper">
+            <p class="feedback-menu__form-desc">
+              Нажимая “отправить”, вы даете согласие на
+              <span class="feedback-menu__form-desc--pink">обработку персональных данных</span>
+              и соглашаетесь с нашей
+              <span class="feedback-menu__form-desc--pink">политикой конфиденциальности</span>
+            </p>
+          </div>
+          <button class="feedback-menu__button" type="button">
+            <p>ОТПРАВИТЬ</p>
+            <img src="./img/icons/right-arrow.svg" alt="">
+          </button>
+        </form>
+      </section>
+    </aside>
+  <script type="text/javascript" src="./js/bundle.js"></script></body>
+  <script type="module" src="index.js"></script>
+</html>
