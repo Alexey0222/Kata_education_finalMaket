@@ -33,6 +33,19 @@ body {
   position: relative;
 }
 
+.main__title::before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 34px;
+  content: '';
+  height: 40px;
+  width: 4px;
+  transform: translateY(-25%);
+  background-color: var(--background-active-color);
+  border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
+}
+
 h1 {
   font-weight: 700;
   line-height: 143%;
@@ -93,7 +106,8 @@ button {
   }
 
   .main__title::before {
-    left: -1.5rem;
+    left: 0;
+    top: 35px;
   }
 }
 
@@ -114,7 +128,8 @@ button {
   }
 
   .main__title::before {
-    left: -2.125rem;
+    left: 0;
+    top: 50px;
   }
 
   .body__content {

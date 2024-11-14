@@ -20,12 +20,13 @@
 }
 
 .phone-menu__button-close-modal {
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-  left: 0;
-  z-index: 200;
+  display: flex;
+  width: 2.5rem;
+  height: 2.5rem;
   background-color: var(--pink-color);
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--border-radius-lg);
 }
 
 .phone-menu__title {
@@ -34,6 +35,18 @@
   line-height: 133%;
   letter-spacing: -0.03em;
   color: #1b1c21;
+}
+
+.phone-menu__title::before {
+  content: '';
+  height: 40px;
+  width: 4px;
+  transform: translateY(-25%);
+  background-color: var(--background-active-color);
+  border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
+  position: absolute;
+  left: 0;
+  top: 94px;
 }
 
 .phone-menu__form {
@@ -118,7 +131,7 @@
     width: 440px;
   }
 
-  .background-menu_open {
+  .background-menu--open {
     max-width: inherit;
   }
 }
@@ -126,6 +139,12 @@
 @media (min-width: 1366px) {
   .phone-menu__container--open {
     width: 440px;
+  }
+
+  .phone-menu__button-close-modal {
+    position: absolute;
+    left: -70px;
+    top: 19px;
   }
 }
 

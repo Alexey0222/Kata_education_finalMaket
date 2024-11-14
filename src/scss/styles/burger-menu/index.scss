@@ -80,13 +80,13 @@
   font-size: 1rem;
 }
 
-.burger-menu__nav-item_active {
+.burger-menu__nav-item--active {
   .burger-menu__nav-item-button {
     color: var(--text-color-gray);
   }
 }
 
-.burger-menu__nav-item_active::before {
+.burger-menu__nav-item--active::before {
   position: absolute;
   content: '';
   left: -1.5rem;
